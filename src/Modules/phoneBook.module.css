@@ -1,0 +1,146 @@
+@import 'normalize.css';
+
+.container {
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.basicFont {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-top: 0;
+  margin-bottom: 0;
+}
+.logo {
+font-weight: 600;
+margin-bottom: 30px;
+font-size: 75px;
+
+}
+.button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgb(90, 90, 237);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .button:hover {
+    transition: 500ms background-color;
+    background-color: black;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 40px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+    color: #656262;
+}
+.labelContacts {
+    margin-bottom: 10px;
+    color: #3a3838;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.input {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #8f8c8c;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-bottom: 8px;
+    outline-color:rgb(90, 90, 237);
+    transition-property: outline;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+    .input:not(:placeholder-shown):required:valid {
+    outline-color: green;
+    transition-property: outline;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .input:not(:placeholder-shown):required:invalid {
+    outline-color: red;
+    transition-property: outline;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .input:hover{
+    border-color:rgb(90, 90, 237);
+    transition: 500ms outline-color;
+    }
+
+    .contactsList {
+    list-style: none;
+    margin: 0px;
+    }
+
+    .contactInfo {
+    font-size: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #656262;;
+    margin-bottom: 20px;
+    }
+
+    .buttonContacts {
+        padding: 5px;
+        border: none;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: rgb(90, 90, 237);
+        color:white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .buttonContacts:hover {
+        transition: 500ms background-color;
+        background-color: black;
+        color: white;
+    }
